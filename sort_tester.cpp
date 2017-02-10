@@ -4,11 +4,11 @@
 using namespace std;
 
 /**
- * Title: Lab 3 Submission : Queue Text String
+ * Title: Program 5 Submission : Selection Sort
  * Course: CST 370 Design & Analysis of Algorithms
  * School: CSU, Monterey Bay
  * Professor: Dr. Feiling Jia
- * Source: CLion 2016.3.2 on 1/22/2017
+ * Source: CLion 2016.3.2
  *
  * This is a driver program to test the queue class for a
  * a program that reads a document containing endnotes,
@@ -55,7 +55,7 @@ int main() {
    }
    while(user_input <= 0);
 
-   // Driver
+   // Driver for selection sort functions
    cout << endl;
    cout << "-------------------Selection Sort for K Number 2-----------------";
    cout << "\n" << "Selection sort Question 2 unsorted ";
@@ -78,6 +78,13 @@ int main() {
    return 0;
 
 }
+/*
+ * Implements the simple selection sort algorithm.
+ * You can use an array to store the elements.
+ *
+ * @param The selection sort algorithm runs in O(n2) time.
+ * @return void
+ */
 void SelectionSort(int x[], int size) {
    for(int i = 0; i < size; i++)
    {
@@ -97,6 +104,14 @@ void SelectionSort(int x[], int size) {
       }
    }
 }
+/*
+ * Modifies the selection sort algorithm to sort
+ * the first k smallest elements of the array
+ * (the value of k will be entered by the user).
+ *
+ * @param The algorithm must run in O(nk) time.
+ * @return the first int k smallest element of array
+ */
 int SelectionSortForK(int x[], int size, int k_input_size) {
    if(k_input_size > size || k_input_size < 0)
    {
@@ -122,6 +137,14 @@ int SelectionSortForK(int x[], int size, int k_input_size) {
    }
    return k_input_size;
 }
+/*
+ * The median value of the input array. Assumes values
+ * in the array are distinct. If the array is of even size,
+ * then the median is the average of the two middle values is the array.
+ *
+ * @param The algorithm must run in O(nk) time.
+ * @return the first int k smallest element of array
+ */
 double is_median(int x[], int size)
 {
    // If even
@@ -132,6 +155,13 @@ double is_median(int x[], int size)
    double is_median = size % 2 ? x[size / 2] : (x[size / 2 - 1] + x[size / 2]) / 2;
    return is_median;
 }
+/*
+ * General function that prints the elements
+ * in the selection sort array.
+ *
+ * @param int x[]
+ * @return int x[i]
+ */
 void PrintArray(int x[], int size) {
    int i;
    for (i = 0; i < size; i++) {
