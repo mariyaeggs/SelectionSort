@@ -1,6 +1,22 @@
+//----- sort_tester.cpp -----
 #include <iostream>
 #include <vector>
 using namespace std;
+
+/**
+ * Title: Lab 3 Submission : Queue Text String
+ * Course: CST 370 Design & Analysis of Algorithms
+ * School: CSU, Monterey Bay
+ * Professor: Dr. Feiling Jia
+ * Source: CLion 2016.3.2 on 1/22/2017
+ *
+ * This is a driver program to test the queue class for a
+ * a program that reads a document containing endnotes,
+ * Sample.txt, collects them in a queue, and prints
+ * them on the screen.
+ *
+ * @author Mariya Eggensperger
+*/
 
 void SelectionSort(int x[], int size);
 int SelectionSortForK(int x[], int size, int k_input_size);
@@ -9,13 +25,13 @@ void PrintArray(int x[], int size);
 
 int main() {
 
-   // Selection sort array input
+   // Selection sort array(s)
    int selection_sort_arrA[10] = {4, 6, 8, 15, 20, 22, 10, 3, 9, 2};
    int selection_sort_arrB[10] = {4, 6, 8, 15, 20, 22, 10, 3, 9, 2};
    int user_input;
    double get_median;
 
-   // Selection Sort
+   // Selection sort function
    cout << endl;
    cout << "-------------------Selection Sort Number 1-----------------";
    cout << "\n" << "Selection sort Question 1 unsorted ";
@@ -27,7 +43,7 @@ int main() {
    PrintArray(selection_sort_arrA, 10);
    cout << endl;
 
-   // Selection Sort for K
+   // Selection sort for K function
    do{
       cout << "\nEnter an integer >= 0: ";
       cin >> user_input;
@@ -39,6 +55,7 @@ int main() {
    }
    while(user_input <= 0);
 
+   // Driver
    cout << endl;
    cout << "-------------------Selection Sort for K Number 2-----------------";
    cout << "\n" << "Selection sort Question 2 unsorted ";
@@ -107,6 +124,11 @@ int SelectionSortForK(int x[], int size, int k_input_size) {
 }
 double is_median(int x[], int size)
 {
+   // If even
+   if(size % 2 == 0) {
+      double is_median = (x[size/2] + x[(size/2)-1])/2.0;
+      return is_median;
+   }
    double is_median = size % 2 ? x[size / 2] : (x[size / 2 - 1] + x[size / 2]) / 2;
    return is_median;
 }
