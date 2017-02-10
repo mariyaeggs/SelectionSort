@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/student/Desktop/CSUMB/CST370/Week5/Program5_Eggensperger_Mariya/Sort.cpp
+iostream
+-
+Sort.h
+/Users/student/Desktop/CSUMB/CST370/Week5/Program5_Eggensperger_Mariya/Sort.h
+
+/Users/student/Desktop/CSUMB/CST370/Week5/Program5_Eggensperger_Mariya/Sort.h
+iostream
+-
+
+/Users/student/Desktop/CSUMB/CST370/Week5/Program5_Eggensperger_Mariya/sort_tester.cpp
+iostream
+-
+Sort.h
+/Users/student/Desktop/CSUMB/CST370/Week5/Program5_Eggensperger_Mariya/Sort.h
+

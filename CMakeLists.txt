@@ -3,5 +3,5 @@ project(Program5_Eggensperger_Mariya)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES sort_tester.cpp)
+set(SOURCE_FILES sort_tester.cpp Sort.cpp Sort.h)
 add_executable(Program5_Eggensperger_Mariya ${SOURCE_FILES})
