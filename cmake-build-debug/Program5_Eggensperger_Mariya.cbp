@@ -80,12 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/student/Desktop/CSUMB/CST370/Week5/Program5_Eggensperger_Mariya/Sort.cpp">
-			<Option target="Program5_Eggensperger_Mariya"/>
-		</Unit>
-		<Unit filename="/Users/student/Desktop/CSUMB/CST370/Week5/Program5_Eggensperger_Mariya/Sort.h">
-			<Option target="Program5_Eggensperger_Mariya"/>
-		</Unit>
 		<Unit filename="/Users/student/Desktop/CSUMB/CST370/Week5/Program5_Eggensperger_Mariya/sort_tester.cpp">
 			<Option target="Program5_Eggensperger_Mariya"/>
 		</Unit>

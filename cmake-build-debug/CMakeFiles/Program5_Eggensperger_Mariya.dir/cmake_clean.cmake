@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Program5_Eggensperger_Mariya.dir/sort_tester.cpp.o"
-  "CMakeFiles/Program5_Eggensperger_Mariya.dir/Sort.cpp.o"
   "Program5_Eggensperger_Mariya.pdb"
   "Program5_Eggensperger_Mariya"
 )
