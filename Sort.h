@@ -1,0 +1,7 @@
+#include <iostream>
+using namespace std;
+
+#ifndef PROGRAM5_EGGENSPERGER_MARIYA_SORT_H
+#define PROGRAM5_EGGENSPERGER_MARIYA_SORT_H
+
+#endif //PROGRAM5_EGGENSPERGER_MARIYA_SORT_H
